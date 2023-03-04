@@ -22,7 +22,7 @@ else $rccFile = "rcc0DropDown.php";
 Force/Load is in Newtons (N) and Length is in Millimetres (mm),
 unless otherwise specified.</h3>
 <?php
-switch ($currentStep)
+switch (isset($currentStep))
 {
    case "1":
 
@@ -30,7 +30,7 @@ switch ($currentStep)
 	break;
 
    default:
-	include $rccFile;
+	include isset($rccFile);
 	break;
 
 }
